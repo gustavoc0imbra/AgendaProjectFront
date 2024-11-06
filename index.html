@@ -72,11 +72,11 @@
             <hr>
         </div>
         <div class="col d-flex justify-content-center align-items-center p-5">
-            <table class="table table-dark table-striped table-hover">
+            <table class="table table-dark table-striped table-hover" id="tabelaAgenda">
                 <caption class="text-end">
-                    <p class="text-success">Realizado(s): R$30,00</p>
-                    <p class="text-danger">Não Realizado(s): R$ 0,00</p>
-                    <p class="fs-4 text-black fw-bold">Total agendamentos: R$ 30,00</p>
+                    <p class="text-success" id="totalRealizado"></p>
+                    <p class="text-danger" id="totalNaoRealizado"></p>
+                    <p class="fs-4 text-black fw-bold" id="totalGeral"></p>
                 </caption>
                 <thead>
                   <tr>
@@ -89,16 +89,7 @@
                     <th scope="col">Valor</th>
                   </tr>
                 </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>Teste agenda</td>
-                    <td>06/11/2024 10:30</td>
-                    <td>Teste</td>
-                    <td>Teste Cliente</td>
-                    <td>Troca de Pneu</td>
-                    <td class="text-end">R$ 30,00</td>
-                  </tr>
+                <tbody id="bodyTabelaAgenda">
                 </tbody>
               </table>
         </div>
